@@ -1,0 +1,92 @@
+commande : git init
+
+description : initialiser un projet git 
+dans le dossier dans lequel on se situe.
+
+=======================================
+
+commande : git status 
+
+description : fait le bilan de l'état actuel
+de notre projet git. 
+- indique toujours que l'on est sur la 
+branche "master"
+- en rouge les modifications qui ne seront 
+pas enregistrées
+- en vers : les modifications qui seront 
+enregistrées
+
+=======================================
+
+commande : git add <dossier ou fichier>
+
+description : ( souvent, on tape : git add . )
+permet d'indiquer à git d'ajouter les 
+modifications ciblées au prochain commit.
+Les modifications seront passées de la zone
+"rouge" (unstagged), qui ne sont pas prises 
+en comptes lors d'un commit, à la zone verte
+(stagged). Quand une modification est dans 
+la zone "verte", on peut faire un commit.
+En gros, c'est un "attention on va 
+sauvegarder, prépare toi !"
+
+======================================
+
+commande : git commit -m <message>
+
+description : la commande d'enregistrement 
+des modifications. Une fois les modifications
+ajoutées avec le "git add", la commande commit
+permet d'enregistrer définitivement nos 
+modificatins, en y attachant un message 
+personnalisé, censé d'écrire les modifications 
+effectuées. 
+
+======================================
+
+commande : git config user.name <nom>
+
+description : configure le nom utilisé pour
+signer les paquets. 
+
+======================================
+
+commande  git config user.email <email>
+
+description : configure l'adresse email
+utilisée pour signer les paquets. 
+
+======================================
+
+commande : git log 
+
+description  affiche l'historique des 
+commits réalisés. Pour quitter cette commande 
+il est souvent nécessaire d'appuyer sur "q". 
+
+=======================================
+
+commande : git remote add origin <url>
+
+description : configure le projet pour
+l'associer à un dépôt git sur github. 
+Le dépôt distant, est appelé "origin"
+(c'est une convention). Cette configuration
+est à faire une fois par projet git, et 
+seulement si l'on souhaite le partager /
+sauvegarder sur github.
+
+========================================
+
+commande : git push -u origin master
+
+description : configure notre projet pour
+qu'il s'envoit par défaut sur le dépôt 
+"origin" et sur sa branche "master".
+Cette commande n'est à entrer qu'une fois 
+par projet.
+Cette commande nécessite d'avoir aouté un dépôt 
+avec la commande "git remote".
+
+=========================================
