@@ -90,3 +90,9 @@ Cette commande nécessite d'avoir aouté un dépôt
 avec la commande "git remote".
 
 =========================================
+
+commande : git push
+
+description : envoie nos modifications 
+enregistrées vers le dépôt distant 
+configuré avec la commande précédente. 
